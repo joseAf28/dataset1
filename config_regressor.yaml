@@ -1,0 +1,17 @@
+model_name: "Regressor"
+
+data:
+  data_path: "data/data_3000_points.txt"
+
+training:
+  ratio_test_val_train: 0.15
+  batch_size: 32
+  lr: 5e-4
+  n_epochs_max: 1500
+  n_epochs_min: 1000
+  weights_physics: 0.005
+
+model:
+  x_dim: 3
+  y_dim: 17
+  hidden_size: [95, 95]
